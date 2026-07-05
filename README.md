@@ -70,4 +70,14 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 
 ---
 
-Made by [Adelvo](https://adelvo.io) — also the home of **Directors Plan** (professional rundown & control software for vMix live productions), **MDE — Mix Desk EQ** (professional audio routing for macOS: capture individual app audio, mic, webcam, and line-in simultaneously) and **LLT — Local Live Translator** (on-device live translation on Apple Silicon).
+## More from Adelvo
+
+**[Directors Plan for vMix](https://adelvo.io/directors-plan)** — *One person plans. Someone else hits Play.* Professional rundown, frame-accurate automation & control for vMix live productions. Press Play and transitions, overlays and timings fire on cue — with **live override during playback**, because live is live. macOS & Windows · 20+ languages · 30-day free trial.
+
+**[LLT — Local Live Translator](https://adelvo.io/local-live-translator)** — *Translate, transcribe, dictate — output almost anywhere.* The whole pipeline runs **100% local on Apple Silicon** (Whisper · Parakeet · Mistral) — then goes live to OBS, VRChat or vMix in your own design. 101 languages, zero cloud dependency, free iOS companion app.
+
+**[MDE — Mix Desk EQ](https://adelvo.io/mix-desk-eq)** — *Route anything to anywhere.* MixDesk X's big brother on macOS: captures **individual app audio**, mic, webcam and line-in simultaneously, full channel strips, up to 4 stereo outputs.
+
+**[Volume Balance](https://adelvo.io/volume-balance)** — kills the #1 annoyance on social media: wildly different volume levels between videos. Right in your browser (Chrome · Firefox · Safari).
+
+Made by [Adelvo](https://adelvo.io).
