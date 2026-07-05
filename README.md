@@ -1,5 +1,7 @@
 # MixDesk X
 
+![Downloads](https://img.shields.io/github/downloads/adelvo-software/MixDeskX/total?label=downloads&color=10b981) ![Latest](https://img.shields.io/github/v/release/adelvo-software/MixDeskX?label=latest&color=3b82f6)
+
 **Free multi-device audio mixer & router for macOS and Windows.**
 Route any input to any output, EQ everything, sync your Bluetooth speakers, and chain studio-grade effects — in a lightweight tray app.
 
