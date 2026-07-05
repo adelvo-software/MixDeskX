@@ -70,4 +70,4 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 
 ---
 
-Made by [Adelvo](https://adelvo.io) — also the home of **MixDeskEQ** (system-wide EQ driver for macOS) and **LLT / Adelvo Translator Bridge** (live translation tools).
+Made by [Adelvo](https://adelvo.io) — also the home of **Directors Plan for vMix** (rundown & show control), **MixDeskEQ** (system-wide EQ driver for macOS) and **LLT / Adelvo Translator Bridge** (live translation tools).
