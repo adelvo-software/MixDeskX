@@ -72,6 +72,11 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 
 ## More from Adelvo
 
+<a href="https://adelvo.io/video/adelvo-karma.mp4"><img src="assets/karma-poster.jpg" alt="Karma — the Adelvo mascot (click for video)" width="360"></a>
+
+*Meet **Karma**, the Adelvo mascot — click for the video.* 🐾
+
+
 **[Directors Plan for vMix](https://adelvo.io/directors-plan)** — *One person plans. Someone else hits Play.* Professional rundown, frame-accurate automation & control for vMix live productions. Press Play and transitions, overlays and timings fire on cue — with **live override during playback**, because live is live. macOS & Windows · 20+ languages · 30-day free trial.
 
 **[LLT — Local Live Translator](https://adelvo.io/local-live-translator)** — *Translate, transcribe, dictate — output almost anywhere.* The whole pipeline runs **100% local on Apple Silicon** (Whisper · Parakeet · Mistral) — then goes live to OBS, VRChat or vMix in your own design. 101 languages, zero cloud dependency, free iOS companion app.
