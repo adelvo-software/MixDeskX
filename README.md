@@ -53,9 +53,10 @@ MixDesk X routes between real devices out of the box. For app-to-app routing (mi
 
 | OS | Driver | Notes |
 |---|---|---|
-| macOS | **[MixDeskEQ audio driver](https://github.com/adelvo-software/mde-audio-drivers)** (by Adelvo) | Recommended — the built-in **“System audio via driver”** input option auto-routes your system output through it, one click. |
-| macOS | [BlackHole 2ch](https://github.com/ExistentialAudio/BlackHole) | Alternative loopback device. |
-| Windows | [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) | CABLE Input = MixDesk X output bus, CABLE Output = mic in Discord/OBS. A+B cables available for multiple loops. |
+| macOS | **[Adelvo audio drivers](https://github.com/adelvo-software/mde-audio-drivers)** | Recommended — an installer built on the excellent open-source [BlackHole](https://github.com/ExistentialAudio/BlackHole) (GPL-3.0) that sets up **multiple** stereo loopback devices in one go. Plain BlackHole gives you a single stereo device; multi-bus routing usually needs two or more. The built-in **“System audio via driver”** input option auto-routes your system output through it, one click. |
+| macOS | [BlackHole 2ch](https://github.com/ExistentialAudio/BlackHole) | The underlying loopback driver — fine if one stereo loop is all you need. |
+| Windows | [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) | Free version = **one** cable (enough for mic → Discord). CABLE Input = MixDesk X output bus, CABLE Output = mic in Discord/OBS. |
+| Windows | [VB-Cable A+B / C+D](https://vb-audio.com/Cable/) or [VoiceMeeter](https://vb-audio.com/Voicemeeter/) | Need more loops? A+B/C+D are donationware add-on cables; VoiceMeeter (free) also adds multiple virtual devices. VB-Audio's license does not allow bundling, so these are separate installs. |
 
 ## Requirements
 
