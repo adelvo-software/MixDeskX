@@ -70,4 +70,4 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 
 ---
 
-Made by [Adelvo](https://adelvo.io) — also the home of **Directors Plan for vMix** (rundown & show control), **MixDeskEQ** (system-wide EQ driver for macOS) and **LLT / Adelvo Translator Bridge** (live translation tools).
+Made by [Adelvo](https://adelvo.io) — also the home of **Directors Plan** (professional rundown & control software for vMix live productions), **MDE — Mix Desk EQ** (professional audio routing for macOS: capture individual app audio, mic, webcam, and line-in simultaneously) and **LLT — Local Live Translator** (on-device live translation on Apple Silicon).
