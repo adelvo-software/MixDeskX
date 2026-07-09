@@ -24,6 +24,7 @@ Linux? Maybe later — the engine is portable. Open an issue if you want it.
 Think of it as a compact Mackie-style console between all your audio devices:
 
 - **Inputs → Buses, any combination.** Add any capture device (USB mic, webcam mic, interface, loopback/virtual cable) as an input strip and route it to up to 4 output buses.
+- **Cable-free system & per-app capture (Windows 10 2004+):** grab **all system audio** or **a single app** (Spotify, browser, a game …) as an input strip — no virtual cable, no driver, no permissions. MixDesk X uses the same WASAPI Process Loopback API as OBS's Application Audio Capture, and excludes its own output automatically, so capturing can't feed back.
 - **Per-input strip:** Gain and Pan (switchable in/out of the signal path), 2/3/11-band EQ with graphic editor, CLAP effect chain, Mute/Solo, fader, VU meter.
 - **Per-bus strip:** its own output device, EQ, CLAP effect chain, **delay 0–1000 ms**, transparent safety limiter with gain-reduction meter, fader, VU.
 - **Speaker sync:** the per-bus delay lets you align a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo.
@@ -40,6 +41,13 @@ Think of it as a compact Mackie-style console between all your audio devices:
 3. **+ OUTPUT** → pick where it should go (speakers, headphones, virtual cable).
 4. Click the bus numbers on the input strip to route it. Done — now add EQ, effects, delay to taste.
 
+### Example: EQ a single app, cable-free (Windows)
+
+1. **+ INPUT** → group **Apps (cable-free)** → pick the app (it shows up while it plays audio).
+2. Route it to a bus on your speakers/headphones — EQ and effects apply to just that app.
+
+For **all system audio** pick **🖥 All system audio — no cable needed** instead. Heads-up: this is a *tap*, not a redirect — apps also keep playing on the Windows default output. If you hear everything twice, set the Windows default output to an unused device (the captured signal is device-independent and keeps flowing).
+
 ### Example: EQ'd mic into Discord (Windows)
 
 1. Install [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) (free).
@@ -51,14 +59,14 @@ On macOS use the [MixDeskEQ audio driver](https://github.com/adelvo-software/mde
 
 ## Virtual audio devices
 
-MixDesk X routes between real devices out of the box. For app-to-app routing (mic → Discord, system audio → MixDesk X) you need a free virtual device once:
+MixDesk X routes between real devices out of the box, and on **Windows it captures system/app audio natively** (see above — no device needed). A virtual device is only needed to feed MixDesk X's *output* into another app (mic → Discord/Zoom/OBS), or for system capture on macOS:
 
 | OS | Driver | Notes |
 |---|---|---|
 | macOS | **[Adelvo audio drivers](https://github.com/adelvo-software/mde-audio-drivers)** | Recommended — an installer built on the excellent open-source [BlackHole](https://github.com/ExistentialAudio/BlackHole) (GPL-3.0) that sets up **multiple** stereo loopback devices in one go. Plain BlackHole gives you a single stereo device; multi-bus routing usually needs two or more. The built-in **“System audio via driver”** input option auto-routes your system output through it, one click. |
 | macOS | [BlackHole 2ch](https://github.com/ExistentialAudio/BlackHole) | The underlying loopback driver — fine if one stereo loop is all you need. |
-| Windows | [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) | Free version = **one** cable (enough for mic → Discord). CABLE Input = MixDesk X output bus, CABLE Output = mic in Discord/OBS. |
-| Windows | [VB-Cable A+B / C+D](https://vb-audio.com/Cable/) or [VoiceMeeter](https://vb-audio.com/Voicemeeter/) | Need more loops? A+B/C+D are donationware add-on cables; VoiceMeeter (free) also adds multiple virtual devices. VB-Audio's license does not allow bundling, so these are separate installs. |
+| Windows | [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) | Free version = **one** cable (enough for mic → Discord). CABLE Input = MixDesk X output bus, CABLE Output = mic in Discord/OBS. The **“System audio via VB-Cable (auto-route)”** input option routes your Windows default output through it, one click. |
+| Windows | [VB-Cable A+B / C+D](https://vb-audio.com/Cable/) or [VoiceMeeter](https://vb-audio.com/Voicemeeter/) | Need more loops (e.g. mic → Discord **and** a parking spot for the default output)? A+B/C+D are donationware add-on cables; VoiceMeeter (free) also adds multiple virtual devices. VB-Audio's license does not allow bundling, so these are separate installs. |
 
 ## Requirements
 
