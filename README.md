@@ -91,8 +91,6 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 
 **[LLT — Local Live Translator](https://adelvo.io/local-live-translator)** — *Translate, transcribe, dictate — output almost anywhere.* The whole pipeline runs **100% local on Apple Silicon** (Whisper · Parakeet · Mistral) — then goes live to OBS, VRChat or vMix in your own design. 101 languages, zero cloud dependency, free iOS companion app.
 
-**[MDE — Mix Desk EQ](https://adelvo.io/mix-desk-eq)** — *Route anything to anywhere.* MixDesk X's big brother on macOS: captures **individual app audio**, mic, webcam and line-in simultaneously, full channel strips, up to 4 stereo outputs.
-
 **[Volume Balance](https://adelvo.io/volume-balance)** — kills the #1 annoyance on social media: wildly different volume levels between videos. Right in your browser (Chrome · Firefox · Safari).
 
 Made by [Adelvo](https://adelvo.io).
