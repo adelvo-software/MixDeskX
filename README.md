@@ -23,10 +23,14 @@ Linux? Maybe later — the engine is portable. Open an issue if you want it.
 
 Think of it as a compact Mackie-style console between all your audio devices:
 
-- **Inputs → Buses, any combination.** Add any capture device (USB mic, webcam mic, interface, loopback/virtual cable) as an input strip and route it to up to 4 output buses.
+- **Inputs → Buses, any combination.** Add any capture device (USB mic, webcam mic, interface, loopback/virtual cable) as an input strip and route it to **up to 16 output buses** — enough for program, zone outputs and per-guest mix-minus feeds at the same time.
 - **Cable-free system & per-app capture, both platforms:** grab **all system audio** or **a single app** (Spotify, browser, a game …) as an input strip — no virtual cable, no driver. Windows 10 2004+ uses WASAPI Process Loopback (the same API as OBS's Application Audio Capture, no permission needed); macOS 13+ uses ScreenCaptureKit (one-time Screen Recording permission). MixDesk X excludes its own output automatically on both, so capturing can't feed back.
-- **Per-input strip:** Gain and Pan (switchable in/out of the signal path), 2/3/11-band EQ with graphic editor, CLAP effect chain, Mute/Solo, fader, VU meter.
-- **Per-bus strip:** its own output device, EQ, CLAP effect chain, **delay 0–1000 ms**, transparent safety limiter with gain-reduction meter, fader, VU.
+- **Per-input strip:** Gain and Pan (switchable in/out of the signal path), 2/3/11/31-band EQ with graphic editor, CLAP effect chain, Mute/Solo/**PFL**, fader, VU meter.
+- **Per-bus strip:** its own output device, EQ, CLAP effect chain, **delay 0–1000 ms**, transparent safety limiter with gain-reduction meter, fader, VU — plus an **OS volume slider** (macOS) that reveals and rides the hidden per-device system volume behind the fader.
+- **PFL & cue — a real headphone section:** the orange **CUE strip** is an *extra* output (its own device, correction EQ, safety limiter, mute — no bus consumed). Hit **PFL** on any channel to hear it **pre-fader** on the cue — even while it's muted. The classic "is there even signal?" check before you push a fader up; **PFL ✕** in the header clears everything with one click.
+- **31-band EQ, RTA & Auto-EQ (software DriveRack):** every strip's EQ scales up to 31 bands with a **real-time ⅓-octave analyzer**; buses can run a pink-noise measurement and **auto-EQ the room**, with UMIK-1/REW mic-calibration file support.
+
+![31-band EQ with RTA and Auto-EQ measurement](assets/mixdeskx-rta.jpg)
 - **Speaker sync:** the per-bus delay lets you align a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo.
 - **CLAP plugin host:** stack multiple effects per strip (each slot its own instance), open the plugin's **native GUI**, or use the built-in generic parameter editor. One click installs the free [Airwindows Consolidated](https://github.com/baconpaul/airwin2rack) pack (~400 effects).
 - **Mic processing for calls & streams:** EQ/compress your USB or webcam mic and feed it to Discord, Zoom, or OBS through a virtual device — see [Virtual audio devices](#virtual-audio-devices) below.
