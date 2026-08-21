@@ -3,7 +3,7 @@
 ![Downloads](https://img.shields.io/github/downloads/adelvo-software/MixDeskX/total?label=downloads&color=10b981) ![Latest](https://img.shields.io/github/v/release/adelvo-software/MixDeskX?label=latest&color=3b82f6)
 
 **Free multi-device audio mixer & router for macOS and Windows.**
-Route any input to any output, EQ everything, sync your Bluetooth speakers, and chain studio-grade effects — in a lightweight tray app.
+Route any input to any output, EQ everything, split active sub/top systems with real crossovers, **measure and align output delays with a mic**, and chain studio-grade effects — in a lightweight tray app.
 
 ![MixDesk X main window](assets/mixdeskx-main.jpg)
 
@@ -31,10 +31,15 @@ Think of it as a compact Mackie-style console between all your audio devices:
 - **31-band EQ, RTA & Auto-EQ (software DriveRack):** every strip's EQ scales up to 31 bands with a **real-time ⅓-octave analyzer**; buses can run a pink-noise measurement and **auto-EQ the room**, with UMIK-1/REW mic-calibration file support.
 
 ![31-band EQ with RTA and Auto-EQ measurement](assets/mixdeskx-rta.jpg)
-- **Speaker sync:** the per-bus delay lets you align a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo.
+- **Active crossovers per bus (X-OVER):** split any signal into sub/top or full 3-way systems — **LP · SUB**, **HP · TOP** and **BP · MID** (bandpass with two crossover frequencies), with **Linkwitz-Riley slopes of 12/24/48 dB/oct**. Each way runs on its own bus and output device: your computer is now also the speaker processor.
+- **Measured delay alignment (ALIGN):** stop guessing latency. A measurement chirp plays through a reference bus and the selected bus, any input channel (your measurement mic) picks it up, and an FFT matched filter locates it sample-accurately — **one click applies the delay** to the earlier way. Made for Bluetooth speakers, whose latency changes on every reconnect; works for crossover ways too.
+
+![Delay measurement with one-click alignment](assets/mixdeskx-align.jpg)
+- **Speaker sync:** the per-bus delay (0–1000 ms) aligns a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo. Set it by hand, or let **ALIGN** measure it for you.
 - **CLAP plugin host:** stack multiple effects per strip (each slot its own instance), open the plugin's **native GUI**, or use the built-in generic parameter editor. One click installs the free [Airwindows Consolidated](https://github.com/baconpaul/airwin2rack) pack (~400 effects).
 - **Mic processing for calls & streams:** EQ/compress your USB or webcam mic and feed it to Discord, Zoom, or OBS through a virtual device — see [Virtual audio devices](#virtual-audio-devices) below.
 - **Presets:** save/load complete mixer setups; the last preset loads automatically at startup.
+- **16 UI languages:** English, Deutsch, Español, Français, Italiano, Português (BR), 日本語, 한국어, 中文, Suomi, Svenska, Polski, Čeština, Dansk, Nederlands, Română. The console labels (MUTE, SOLO, PFL, EQ …) stay in classic mixer English — like on hardware consoles worldwide.
 - **Stays out of your way:** tray/menu-bar app, compact mini mixer (macOS), XRUN monitor in the footer, automatic stream recovery when devices disappear or glitch.
 - **Low latency:** buffer size selectable 128–2048 frames, 44.1/48/96 kHz, float32 engine end to end.
 
