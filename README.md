@@ -35,6 +35,10 @@ Think of it as a compact Mackie-style console between all your audio devices:
 - **Measured delay alignment (ALIGN):** stop guessing latency. A measurement chirp plays through a reference bus and the selected bus, any input channel (your measurement mic) picks it up, and an FFT matched filter locates it sample-accurately — **one click applies the delay** to the earlier way. Made for Bluetooth speakers, whose latency changes on every reconnect; works for crossover ways too.
 
 ![Delay measurement with one-click alignment](assets/mixdeskx-align.jpg)
+- **Feedback destroyer & low-cut (mic tools):** arm an automatic **feedback destroyer** per microphone channel — it watches for a sustained feedback tone sitting on one exact frequency and drops a narrow notch on it, with a **LIVE** mode (adaptive, releases when the frequency goes quiet) and a **FIXED** mode for ringing out a soundcheck. And a switchable **low-cut / rumble filter** on every input (40–160 Hz, 12 or 24 dB/oct) strips mic rumble, handling noise and low-frequency feedback with zero latency. The honest split: the low-cut kills the lows, the destroyer handles the mid-range whistles.
+
+![Feedback destroyer auto-notching sustained feedback in the 31-band EQ](assets/mixdeskx-fbk.jpg)
+![Per-channel low-cut / rumble filter](assets/mixdeskx-lowcut.jpg)
 - **Speaker sync:** the per-bus delay (0–1000 ms) aligns a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo. Set it by hand, or let **ALIGN** measure it for you.
 - **CLAP plugin host:** stack multiple effects per strip (each slot its own instance), open the plugin's **native GUI**, or use the built-in generic parameter editor. One click installs the free [Airwindows Consolidated](https://github.com/baconpaul/airwin2rack) pack (~400 effects).
 - **Mic processing for calls & streams:** EQ/compress your USB or webcam mic and feed it to Discord, Zoom, or OBS through a virtual device — see [Virtual audio devices](#virtual-audio-devices) below.
