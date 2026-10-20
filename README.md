@@ -45,6 +45,9 @@ Think of it as a compact Mackie-style console between all your audio devices:
   - **Local HTTP control** (off by default, optionally network-wide): `/api/ch/<name>/mute`, `/up`, `/down`, `/volume?db=-10`, `/api/bus/<n>/…`, `/api/state`.
   - **Companion export** for Stream Deck Mini, 15, XL, + and + XL with **live level, peak hold and mute state on the keys** (Generic HTTP module, no extra module). On the Stream Deck + every dial is a channel.
   - **Names are the address:** rename a channel (click *CH 1*) and use that name in the URL — rename first, then export.
+- **Network audio between MixDesk X computers — MixDesk X Pro:** send any bus over the network and pick it as an input on another Mac or Windows PC — several computers in a chain, in any direction. **Direct** (default) gives every receiver its own packets and runs robustly over cable, Wi-Fi and mesh; **multicast in AES67 format** is there for wired networks (after a confirmation — tested between MixDesk X computers, not yet with AES67/Dante hardware; feedback or loan hardware welcome). Streams find each other automatically, clock drift between the computers is compensated with a high-quality resampler, ~2.3 Mbit/s per stereo stream, buffer 20–200 ms per input. The computer stays awake while network audio runs. **$19 one-time for 2 computers, 14-day free trial** — set up via the 🌐 button. Everything else in MixDesk X stays free.
+
+![Network audio dialog with MixDesk X Pro](assets/mixdeskx-network.png)
 - **Speaker sync:** the per-bus delay (0–1000 ms) aligns a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo. Set it by hand, or let **ALIGN** measure it for you.
 - **CLAP plugin host:** stack multiple effects per strip (each slot its own instance), open the plugin's **native GUI**, or use the built-in generic parameter editor. One click installs the free [Airwindows Consolidated](https://github.com/baconpaul/airwin2rack) pack (~400 effects).
 - **Mic processing for calls & streams:** EQ/compress your USB or webcam mic and feed it to Discord, Zoom, or OBS through a virtual device — see [Virtual audio devices](#virtual-audio-devices) below.
@@ -95,7 +98,7 @@ MixDesk X routes between real devices out of the box and **captures system/app a
 
 ## License
 
-MixDesk X is **freeware** (binary distribution, closed source) — free for personal and commercial use. See [EULA.md](EULA.md). CLAP plugins are third-party software under their own licenses.
+MixDesk X is **freeware** (binary distribution, closed source) — free for personal and commercial use. Network audio is the optional paid add-on **MixDesk X Pro** (14-day free trial); everything else stays free. See [EULA.md](EULA.md). CLAP plugins are third-party software under their own licenses.
 
 ---
 
