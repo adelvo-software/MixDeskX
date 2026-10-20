@@ -4,7 +4,7 @@
 
 This End User License Agreement ("Agreement") is a legal agreement between you ("User") and Adelvo ("Adelvo") governing your use of the MixDesk X software ("Software").
 
-**1. License grant.** Adelvo grants you a non-exclusive, non-transferable license to install and use the Software free of charge for personal and commercial purposes on any number of machines you control. The Software is distributed as freeware in binary form only.
+**1. License grant.** Adelvo grants you a non-exclusive, non-transferable license to install and use the Software free of charge for personal and commercial purposes on any number of machines you control. The Software is distributed as freeware in binary form only. Optional paid features (**MixDesk X Pro** — currently network audio) require a purchased license key; a key may be activated on the number of computers stated at purchase (currently 2). The 14-day trial of these features is free. All other features remain free of charge.
 
 **2. Restrictions.** You may not sell, rent, or sublicense the Software, distribute modified copies, or reverse engineer, decompile, or disassemble it except to the extent permitted by applicable law. You may share the unmodified official installers.
 
