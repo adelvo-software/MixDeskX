@@ -1,6 +1,6 @@
 # MixDesk X — End User License Agreement
 
-**Effective: 2026-07-05**
+**Effective: 2026-10-20** (previous version: 2026-07-05)
 
 This End User License Agreement ("Agreement") is a legal agreement between you ("User") and Adelvo ("Adelvo") governing your use of the MixDesk X software ("Software").
 
