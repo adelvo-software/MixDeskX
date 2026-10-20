@@ -5,7 +5,7 @@
 **Free multi-device audio mixer & router for macOS, Windows and Linux (beta).**
 Route any input to any output, EQ everything, split active sub/top systems with real crossovers, **measure and align output delays with a mic**, and chain studio-grade effects — in a lightweight tray app.
 
-![MixDesk X main window](assets/mixdeskx-main.jpg)
+![MixDesk X main window](assets/MDX-041-Hero.png)
 
 ## Download
 
