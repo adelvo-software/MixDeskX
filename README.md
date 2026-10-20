@@ -2,7 +2,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/adelvo-software/MixDeskX/total?label=downloads&color=10b981) ![Latest](https://img.shields.io/github/v/release/adelvo-software/MixDeskX?label=latest&color=3b82f6)
 
-**Free multi-device audio mixer & router for macOS and Windows.**
+**Free multi-device audio mixer & router for macOS, Windows and Linux (beta).**
 Route any input to any output, EQ everything, split active sub/top systems with real crossovers, **measure and align output delays with a mic**, and chain studio-grade effects — in a lightweight tray app.
 
 ![MixDesk X main window](assets/mixdeskx-main.jpg)
@@ -16,8 +16,9 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 | macOS (Apple Silicon) | `MixDesk-X-x.xx.xxx.dmg` — signed & notarized |
 | Windows 10/11 x64 | `MixDesk-X-x.xx.xxx-amd64-installer.exe` — signed |
 | Windows 11 ARM64 | `MixDesk-X-x.xx.xxx-arm64-installer.exe` — signed |
+| Linux x64 (beta) | `mixdesk-x-x.xx.xxx-amd64.deb` — Ubuntu 22.04 base (Zorin OS 17, Linux Mint 21 …): `sudo apt install ./mixdesk-x-x.xx.xxx-amd64.deb` |
 
-Linux? Maybe later — the engine is portable. Open an issue if you want it.
+**Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. Feedback via issues is welcome.
 
 ## What it does
 
@@ -45,7 +46,7 @@ Think of it as a compact Mackie-style console between all your audio devices:
   - **Local HTTP control** (off by default, optionally network-wide): `/api/ch/<name>/mute`, `/up`, `/down`, `/volume?db=-10`, `/api/bus/<n>/…`, `/api/state`.
   - **Companion export** for Stream Deck Mini, 15, XL, + and + XL with **live level, peak hold and mute state on the keys** (Generic HTTP module, no extra module). On the Stream Deck + every dial is a channel.
   - **Names are the address:** rename a channel (click *CH 1*) and use that name in the URL — rename first, then export.
-- **Network audio between MixDesk X computers — MixDesk X Pro:** send any bus over the network and pick it as an input on another Mac or Windows PC — several computers in a chain, in any direction. **Direct** (default) gives every receiver its own packets and runs robustly over cable, Wi-Fi and mesh; **multicast in AES67 format** is there for wired networks (after a confirmation — tested between MixDesk X computers, not yet with AES67/Dante hardware; feedback or loan hardware welcome). Streams find each other automatically, clock drift between the computers is compensated with a high-quality resampler, ~2.3 Mbit/s per stereo stream, buffer 20–200 ms per input. The computer stays awake while network audio runs. **$19 one-time for 2 computers, 14-day free trial** — set up via the 🌐 button. Everything else in MixDesk X stays free.
+- **Network audio between MixDesk X computers — MixDesk X Pro:** send any bus over the network and pick it as an input on another Mac, Windows or Linux computer — several computers in a chain, in any direction. **Direct** (default) gives every receiver its own packets and runs robustly over cable, Wi-Fi and mesh; **multicast in AES67 format** is there for wired networks (after a confirmation — tested between MixDesk X computers, not yet with AES67/Dante hardware; feedback or loan hardware welcome). Streams find each other automatically, clock drift between the computers is compensated with a high-quality resampler, ~2.3 Mbit/s per stereo stream, buffer 20–200 ms per input. The computer stays awake while network audio runs. **$19 one-time for 2 computers, 14-day free trial** — set up via the 🌐 button. Everything else in MixDesk X stays free.
 
 ![Network audio dialog with MixDesk X Pro](assets/mixdeskx-network.png)
 - **Speaker sync:** the per-bus delay (0–1000 ms) aligns a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo. Set it by hand, or let **ALIGN** measure it for you.
@@ -94,6 +95,7 @@ MixDesk X routes between real devices out of the box and **captures system/app a
 
 - **macOS 13+** (Apple Silicon)
 - **Windows 10/11** (x64 or ARM64)
+- **Linux x64 (beta)** — Ubuntu 22.04-based distributions (needs libwebkit2gtk-4.0); system audio via PulseAudio/PipeWire
 - CLAP plugins are optional; scanned from the standard CLAP folders
 
 ## License
