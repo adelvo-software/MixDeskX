@@ -9,7 +9,7 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 
 ## Download
 
-**[⬇ Latest release](../../releases/latest)** — free, no account, no ads.
+**[⬇ Latest release](../../releases/latest)** — free, no account, no ads. If it helps you: **[♥ leave a tip on Ko-fi](https://ko-fi.com/adelvo)**.
 
 | Platform | File |
 |---|---|
@@ -18,7 +18,7 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 | Windows 11 ARM64 | `MixDesk-X-x.xx.xxx-arm64-installer.exe` — signed |
 | Linux x64 (beta) | `mixdesk-x-x.xx.xxx-amd64.deb` — Ubuntu 22.04 base (Zorin OS 17, Linux Mint 21 …): `sudo apt install ./mixdesk-x-x.xx.xxx-amd64.deb` |
 
-**Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. Feedback via issues is welcome.
+**Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. The current Linux build is 1.42.041 (attached to that release). Feedback via issues is welcome.
 
 ## What it does
 
@@ -28,6 +28,8 @@ Think of it as a compact Mackie-style console between all your audio devices:
 - **Cable-free system & per-app capture, both platforms:** grab **all system audio** or **a single app** (Spotify, browser, a game …) as an input strip — no virtual cable, no driver. Windows 10 2004+ uses WASAPI Process Loopback (the same API as OBS's Application Audio Capture, no permission needed); macOS 13+ uses ScreenCaptureKit (one-time Screen Recording permission). MixDesk X excludes its own output automatically on both, so capturing can't feed back.
 - **Per-input strip:** Gain and Pan (switchable in/out of the signal path), 2/3/11/31-band EQ with graphic editor, CLAP effect chain, Mute/Solo/**PFL**, fader, VU meter.
 - **Per-bus strip:** its own output device, EQ, CLAP effect chain, **delay 0–1000 ms**, transparent safety limiter with gain-reduction meter, fader, VU — plus an **OS volume slider** (macOS) that reveals and rides the hidden per-device system volume behind the fader.
+- **Multichannel interfaces — every pair, in and out (new in 1.42.042):** on devices with more than two channels, each input strip picks its own **stereo pair (1+2, 3+4 …) or single mono input**, and each bus its own **output pair or mono output** — PA on 1+2, headphones on 3+4, stream on 5+6, all from one interface (tested with a 56-channel aggregate). **macOS aggregate devices** work with all their sub-devices, also at different sample rates (e.g. a Bluetooth speaker at 44.1 kHz, converted with a high-quality resampler), and the OS volume slider follows the sub-device. On Windows, VB-Cable set to 7.1 becomes four stereo lines. Pairs 1+2 are free; from 3+4 upward it's part of MixDesk X Pro.
+- **IR export for guitarists (Pro, new in 1.42.042):** measure your speaker with AUTO-EQ and export the 31-band correction as an impulse response (24-bit mono WAV, minimum phase, 44.1/48/96 kHz) for your amp modeler or IR loader — it then runs there with no extra latency. Optionally merged into your existing cab IR for loaders with a single IR slot.
 - **PFL & cue — a real headphone section:** the orange **CUE strip** is an *extra* output (its own device, correction EQ, safety limiter, mute — no bus consumed). Hit **PFL** on any channel to hear it **pre-fader** on the cue — even while it's muted. The classic "is there even signal?" check before you push a fader up; **PFL ✕** in the header clears everything with one click.
 - **31-band EQ, RTA & Auto-EQ (software DriveRack):** every strip's EQ scales up to 31 bands with a **real-time ⅓-octave analyzer**; buses can run a pink-noise measurement and **auto-EQ the room**, with UMIK-1/REW mic-calibration file support.
 
@@ -46,7 +48,7 @@ Think of it as a compact Mackie-style console between all your audio devices:
   - **Local HTTP control** (off by default, optionally network-wide): `/api/ch/<name>/mute`, `/up`, `/down`, `/volume?db=-10`, `/api/bus/<n>/…`, `/api/state`.
   - **Companion export** for Stream Deck Mini, 15, XL, + and + XL with **live level, peak hold and mute state on the keys** (Generic HTTP module, no extra module). On the Stream Deck + every dial is a channel.
   - **Names are the address:** rename a channel (click *CH 1*) and use that name in the URL — rename first, then export.
-- **Network audio between MixDesk X computers — MixDesk X Pro:** send any bus over the network and pick it as an input on another Mac, Windows or Linux computer — several computers in a chain, in any direction. **Direct** (default) gives every receiver its own packets and runs robustly over cable, Wi-Fi and mesh; **multicast in AES67 format** is there for wired networks (after a confirmation — tested between MixDesk X computers, not yet with AES67/Dante hardware; feedback or loan hardware welcome). Streams find each other automatically, clock drift between the computers is compensated with a high-quality resampler, ~2.3 Mbit/s per stereo stream, buffer 20–200 ms per input. The computer stays awake while network audio runs. **$19 one-time for 2 computers, 14-day free trial** — set up via the 🌐 button. Everything else in MixDesk X stays free.
+- **Network audio between MixDesk X computers — MixDesk X Pro:** send any bus over the network and pick it as an input on another Mac, Windows or Linux computer — several computers in a chain, in any direction. **Direct** (default) gives every receiver its own packets and runs robustly over cable, Wi-Fi and mesh; **multicast in AES67 format** is there for wired networks (after a confirmation — tested between MixDesk X computers, not yet with AES67/Dante hardware; feedback or loan hardware welcome). Streams find each other automatically, clock drift between the computers is compensated with a high-quality resampler, ~2.3 Mbit/s per stereo stream, buffer 20–200 ms per input. The computer stays awake while network audio runs. **$19 one-time for 2 computers, 14-day free trial** — set up via the 🌐 button. The same Pro license covers multichannel pairs from 3+4 and the IR export; everything else in MixDesk X stays free.
 
 ![Network audio dialog with MixDesk X Pro](assets/mixdeskx-network.png)
 - **Speaker sync:** the per-bus delay (0–1000 ms) aligns a Bluetooth speaker with wired speakers playing the same source — multi-room without the echo. Set it by hand, or let **ALIGN** measure it for you.
@@ -100,7 +102,7 @@ MixDesk X routes between real devices out of the box and **captures system/app a
 
 ## License
 
-MixDesk X is **freeware** (binary distribution, closed source) — free for personal and commercial use. Network audio is the optional paid add-on **MixDesk X Pro** (14-day free trial); everything else stays free. See [EULA.md](EULA.md). CLAP plugins are third-party software under their own licenses.
+MixDesk X is **freeware** (binary distribution, closed source) — free for personal and commercial use. **MixDesk X Pro** is the optional paid add-on for network audio, multichannel input/output pairs from 3+4 and the IR export (14-day free trial); everything else stays free. Tips for the free version are welcome on [Ko-fi](https://ko-fi.com/adelvo) — they unlock nothing, everything free stays free. See [EULA.md](EULA.md). CLAP plugins are third-party software under their own licenses.
 
 ---
 
