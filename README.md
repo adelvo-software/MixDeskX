@@ -18,7 +18,7 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 | Windows 11 ARM64 | `MixDesk-X-x.xx.xxx-arm64-installer.exe` — signed |
 | Linux x64 (beta) | `mixdesk-x-x.xx.xxx-amd64.deb` — Ubuntu 22.04 base (Zorin OS 17, Linux Mint 21 …): `sudo apt install ./mixdesk-x-x.xx.xxx-amd64.deb` |
 
-**Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. The current Linux build is 1.42.041 (attached to that release). Feedback via issues is welcome.
+**Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. Feedback via issues is welcome.
 
 ## What it does
 
