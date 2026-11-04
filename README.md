@@ -9,6 +9,10 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 
 ![MixDesk X main window](assets/MDX-041-Hero.png)
 
+[![Video: MixDesk X Complete Tutorial](assets/video-tutorial.jpg)](https://youtu.be/xYNSSSI7tGs)
+
+▶️ **[Watch the complete tutorial on YouTube](https://youtu.be/xYNSSSI7tGs)**
+
 ## Download
 
 **[⬇ Latest release](../../releases/latest)** — free, no account, no ads. If it helps you: **[♥ leave a tip on Ko-fi](https://ko-fi.com/adelvo)**.
