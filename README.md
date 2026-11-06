@@ -2,16 +2,16 @@
 
 [![Support my work on Ko-fi](https://img.shields.io/badge/%E2%99%A5_Support_my_work-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/adelvo)
 
-![Downloads](https://img.shields.io/github/downloads/adelvo-software/MixDeskX/total?label=downloads&color=10b981) ![Latest](https://img.shields.io/github/v/release/adelvo-software/MixDeskX?label=latest&color=3b82f6)
+![Free](https://img.shields.io/badge/Free-3b82f6?style=flat) ![Windows](https://img.shields.io/badge/Windows-10b981?style=flat) ![macOS](https://img.shields.io/badge/macOS-ff7e00?style=flat) ![Linux](https://img.shields.io/badge/Linux_beta-4870c8?style=flat) ![Downloads](https://img.shields.io/github/downloads/adelvo-software/MixDeskX/total?label=downloads&color=10b981) ![Latest](https://img.shields.io/github/v/release/adelvo-software/MixDeskX?label=latest&color=3b82f6)
+
+🌐 [adelvo.io/mix-desk-x](https://adelvo.io/mix-desk-x) · 📖 [Manual](https://adelvo.io/mix-desk-x/manual/) · ▶️ [Complete tutorial](https://youtu.be/xYNSSSI7tGs)
 
 **Free multi-device audio mixer & router for macOS, Windows and Linux (beta).**
 Route any input to any output, EQ everything, split active sub/top systems with real crossovers, **measure and align output delays with a mic**, and chain studio-grade effects — in a lightweight tray app.
 
-![MixDesk X main window](assets/MDX-041-Hero.png)
+<a href="https://adelvo.io/mix-desk-x"><img src="assets/mdx-hero.jpg" width="49%" alt="MixDesk X main window"></a> <a href="https://youtu.be/xYNSSSI7tGs"><img src="assets/video-tutorial.jpg" width="49%" alt="Video: MixDesk X Complete Tutorial"></a>
 
-[![Video: MixDesk X Complete Tutorial](assets/video-tutorial.jpg)](https://youtu.be/xYNSSSI7tGs)
-
-▶️ **[Watch the complete tutorial on YouTube](https://youtu.be/xYNSSSI7tGs)**
+▶️ **[Watch the complete tutorial on YouTube](https://youtu.be/xYNSSSI7tGs)** — every feature step by step, setup on Mac and Windows.
 
 ## Download
 
@@ -25,6 +25,17 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 | Linux x64 (beta) | `mixdesk-x-x.xx.xxx-amd64.deb` — Ubuntu 22.04 base (Zorin OS 17, Linux Mint 21 …): `sudo apt install ./mixdesk-x-x.xx.xxx-amd64.deb` |
 
 **Linux is new (beta, since 1.42.041):** built and tested on Zorin OS, including network audio with Mac and Windows. Feedback via issues is welcome.
+
+## Short clips
+
+One feature per clip, under a minute each — click a picture to play. More in the [manual](https://adelvo.io/mix-desk-x/manual/).
+
+<table>
+<tr><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/01-getting-started.mp4"><img src="assets/clips/01-getting-started.jpg" alt="Clip: Getting started"></a><br><sub><b>Getting started</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/03-input-channel.mp4"><img src="assets/clips/03-input-channel.jpg" alt="Clip: Input strip"></a><br><sub><b>Input strip</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/04-output-bus.mp4"><img src="assets/clips/04-output-bus.jpg" alt="Clip: Output buses"></a><br><sub><b>Output buses</b></sub></td></tr>
+<tr><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/15-multichannel.mp4"><img src="assets/clips/15-multichannel.jpg" alt="Clip: Multichannel pairs"></a><br><sub><b>Multichannel pairs</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/06-eq-rta-autoeq.mp4"><img src="assets/clips/06-eq-rta-autoeq.jpg" alt="Clip: EQ, RTA & Auto-EQ"></a><br><sub><b>EQ, RTA & Auto-EQ</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/08-driverack.mp4"><img src="assets/clips/08-driverack.jpg" alt="Clip: Crossover & delay align"></a><br><sub><b>Crossover & delay align</b></sub></td></tr>
+<tr><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/09-feedback-destroyer.mp4"><img src="assets/clips/09-feedback-destroyer.jpg" alt="Clip: Feedback destroyer"></a><br><sub><b>Feedback destroyer</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/10-cue-pfl.mp4"><img src="assets/clips/10-cue-pfl.jpg" alt="Clip: CUE & PFL"></a><br><sub><b>CUE & PFL</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/11-clap-fx.mp4"><img src="assets/clips/11-clap-fx.jpg" alt="Clip: CLAP effects"></a><br><sub><b>CLAP effects</b></sub></td></tr>
+<tr><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/07-ir-export.mp4"><img src="assets/clips/07-ir-export.jpg" alt="Clip: IR export (Pro)"></a><br><sub><b>IR export (Pro)</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/13-remote-control.mp4"><img src="assets/clips/13-remote-control.jpg" alt="Clip: Hotkeys, HTTP, Stream Deck"></a><br><sub><b>Hotkeys, HTTP, Stream Deck</b></sub></td><td width="33%" align="center"><a href="https://adelvo.io/mix-desk-x/manual/video/16-network-audio.mp4"><img src="assets/clips/16-network-audio.jpg" alt="Clip: Network audio (Pro)"></a><br><sub><b>Network audio (Pro)</b></sub></td></tr>
+</table>
 
 ## What it does
 
@@ -119,10 +130,14 @@ MixDesk X is **freeware** (binary distribution, closed source) — free for pers
 *Meet **Karma**, the Adelvo mascot — click for the video.* 🐾
 
 
-**[Directors Plan for vMix](https://adelvo.io/directors-plan)** — *One person plans. Someone else hits Play.* Professional rundown, frame-accurate automation & control for vMix live productions. Press Play and transitions, overlays and timings fire on cue — with **live override during playback**, because live is live. macOS & Windows · 20+ languages · 30-day free trial.
+**[Directors Plan](https://adelvo.io/directors-plan)** — Plan everything you control in vMix as one rundown and run it automatically or by hand, one click per cue: cameras, clips, overlays, audio, HTTP devices, tablet Web Controller. Stream Deck / Companion export. macOS, Windows & Linux · 30-day free trial. ▶️ [Tutorial](https://youtu.be/nZLAKuyfa-M)
 
-**[LLT — Local Live Translator](https://adelvo.io/local-live-translator)** — *Translate, transcribe, dictate — output almost anywhere.* The whole pipeline runs **100% local on Apple Silicon** (Whisper · Parakeet · Mistral) — then goes live to OBS, VRChat or vMix in your own design. 101 languages, zero cloud dependency, free iOS companion app.
+**[AppVol](https://github.com/adelvo-software/AppVol)** — free: every macOS app gets its own volume slider, right in the menu bar. Real VU meters, output switching, no audio driver.
 
-**[Volume Balance](https://adelvo.io/volume-balance)** — kills the #1 annoyance on social media: wildly different volume levels between videos. Right in your browser (Chrome · Firefox · Safari).
+**[Volume Balance](https://adelvo.io/volume-balance)** — free browser extension that evens out wildly different volume levels between videos. Real compressor, Chrome and Firefox.
 
-Made by [Adelvo](https://adelvo.io).
+**[LLT — Local Live Translator](https://adelvo.io/local-live-translator)** — on-device live translation on Apple Silicon, 101 languages, live subtitles to OBS, VRChat and vMix. With the iOS companion [LLT Mobile](https://adelvo.io/local-live-translator/mobile). ▶️ [Tutorial](https://youtu.be/xvBJBjpVGPI)
+
+**[Adelvo Commander](https://adelvo.io/adelvo-commander)** — free dual-pane SFTP client and local file manager with batch rename and backup sync. ▶️ [Tutorial](https://youtu.be/8d-bDLBvioY)
+
+All products: [github.com/adelvo-software](https://github.com/adelvo-software) · Made by [Adelvo](https://adelvo.io).
