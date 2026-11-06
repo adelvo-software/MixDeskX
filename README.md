@@ -97,7 +97,7 @@ For **all system audio** pick **🖥 All system audio — no cable needed** inst
 3. Output bus: device = **CABLE Input**.
 4. Discord → Voice settings → Input device = **CABLE Output**.
 
-On macOS use the [MixDeskEQ audio driver](https://github.com/adelvo-software/mde-audio-drivers) or [BlackHole](https://github.com/ExistentialAudio/BlackHole) the same way.
+On macOS use the [Adelvo audio drivers](https://github.com/adelvo-software/mde-audio-drivers) (device **MixDesk X WebRTC**) or [BlackHole](https://github.com/ExistentialAudio/BlackHole) the same way.
 
 ## Virtual audio devices
 
@@ -105,7 +105,7 @@ MixDesk X routes between real devices out of the box and **captures system/app a
 
 | OS | Driver | Notes |
 |---|---|---|
-| macOS | **[Adelvo audio drivers](https://github.com/adelvo-software/mde-audio-drivers)** | Recommended — an installer built on the excellent open-source [BlackHole](https://github.com/ExistentialAudio/BlackHole) (GPL-3.0) that sets up **multiple** stereo loopback devices in one go. Plain BlackHole gives you a single stereo device; multi-bus routing usually needs two or more. The built-in **“System audio via driver”** input option auto-routes your system output through it, one click. |
+| macOS | **[Adelvo audio drivers](https://github.com/adelvo-software/mde-audio-drivers)** | Recommended — an installer built on the excellent open-source [BlackHole](https://github.com/ExistentialAudio/BlackHole) (GPL-3.0) that sets up **multiple** stereo loopback devices in one go (MixDesk X System, WebRTC, Mix 3–8), plus an optional **16-channel** device since 2.0. Plain BlackHole gives you a single stereo device; multi-bus routing usually needs two or more. The built-in **“System audio via driver”** input option auto-routes your system output through it, one click. |
 | macOS | [BlackHole 2ch](https://github.com/ExistentialAudio/BlackHole) | The underlying loopback driver — fine if one stereo loop is all you need. |
 | Windows | [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) | Free version = **one** cable (enough for mic → Discord). CABLE Input = MixDesk X output bus, CABLE Output = mic in Discord/OBS. The **“System audio via VB-Cable (auto-route)”** input option routes your Windows default output through it, one click. |
 | Windows | [VB-Cable A+B / C+D](https://vb-audio.com/Cable/) or [VoiceMeeter](https://vb-audio.com/Voicemeeter/) | Need more loops (e.g. mic → Discord **and** a parking spot for the default output)? A+B/C+D are donationware add-on cables; VoiceMeeter (free) also adds multiple virtual devices. VB-Audio's license does not allow bundling, so these are separate installs. |
