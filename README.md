@@ -19,7 +19,7 @@ Route any input to any output, EQ everything, split active sub/top systems with 
 
 | Platform | File |
 |---|---|
-| macOS (Apple Silicon) | `MixDesk-X-x.xx.xxx.dmg` — signed & notarized |
+| macOS (Apple Silicon & Intel, Universal) | `MixDesk-X-x.xx.xxx.dmg` — signed & notarized |
 | Windows 10/11 x64 | `MixDesk-X-x.xx.xxx-amd64-installer.exe` — signed |
 | Windows 11 ARM64 | `MixDesk-X-x.xx.xxx-arm64-installer.exe` — signed |
 | Linux x64 (beta) | `mixdesk-x-x.xx.xxx-amd64.deb` — Ubuntu 22.04 base (Zorin OS 17, Linux Mint 21 …): `sudo apt install ./mixdesk-x-x.xx.xxx-amd64.deb` |
@@ -112,7 +112,7 @@ MixDesk X routes between real devices out of the box and **captures system/app a
 
 ## Requirements
 
-- **macOS 13+** (Apple Silicon)
+- **macOS 11+** (Apple Silicon or Intel; system audio capture needs macOS 13+)
 - **Windows 10/11** (x64 or ARM64)
 - **Linux x64 (beta)** — Ubuntu 22.04-based distributions (needs libwebkit2gtk-4.0); system audio via PulseAudio/PipeWire
 - CLAP plugins are optional; scanned from the standard CLAP folders
